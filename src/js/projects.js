@@ -1,0 +1,1 @@
+const button_view_details = true;
