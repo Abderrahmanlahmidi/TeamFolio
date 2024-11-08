@@ -7,8 +7,36 @@
   <title>Projects</title>
 </head>
 <body>
-  <h1 class=" font-bold underline">
-    Hello world!
-  </h1>
+  <header class="px-[120px] flex flex-col gap-4 max-lg:px-[16px] py-[15px] bg-white shadow sticky top-0">
+    <nav class="flex justify-between items-center" >
+      <h4 class="font-bold text-[24px] max-lg:text-[20px] cursor-pointer">TeamFolio</h4>
+      <ul class="flex gap-10 items-center max-lg:hidden" >
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="project.html">Équipe</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="">Projects</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="">Services</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="">Contact</a></li>
+      </ul>
+      <div class="hamburgerMenu p-[5px] cursor-pointer hidden max-lg:block bg-[#f3f4f6] rounded" >
+        <img class="w-[30px] hidden max-lg:block" src="../assets/menu.svg" alt="icon button menu">
+      </div>
+    </nav>
+    <div class="navLinks hidden    p-5 rounded  bg-[#f3f4f6]   flex-col gap-3" >
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Équipe</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Projects</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Services</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Contact</a></li>
+      </div>
+
+    </div>
+  </header>
+  <div class="h-[1000px]"></div>
 </body>
+<script src="/src/js/projects.js" ></script>
 </html>
