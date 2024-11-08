@@ -1,0 +1,71 @@
+body{
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+#slide{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+height: 424px;
+background-image:url(/src/public/assets/4d968efd2fc513a5bca11a959bb00c7fcc1af2db\ 3.png)
+
+}
+
+
+ #slide .texts  h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+ }
+
+ #slide .texts p{
+   
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 45px;
+text-align: center;
+color: #000000;
+
+
+ }
+
+ #informations{
+    display: flex;
+    flex-direction: row;
+    background: #F4F5EF;
+    gap:40px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 140%;
+height: 1500px;
+width: ;
+
+ }
+
+ #informations input{
+    width: 294px;
+height: 40px;
+ }
+
+
+ #informations .second input .peer{
+    width: 294px;
+min-width: 240px;
+height: 80px;
+min-height: 80px;
+background-color: red;
+ }
+
+
+ 
