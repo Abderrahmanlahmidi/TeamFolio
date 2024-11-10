@@ -1,0 +1,83 @@
+{
+    "cards":[
+      {
+        "id":1,
+        "title": "Portfolio design",
+        "description": "composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de",
+        "category":"popular",
+        "projectDetails": {
+          "name": "Wood Company Identity",
+          "date": "January 19, 2017",
+          "client": "Wood Company",
+          "image": "/src/public/assets/project_1.jpg",
+          "brief": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte."
+        }
+      },
+      {
+        "id":2,
+        "title": "E-commerce Platform",
+        "description": "conception de la plateforme de commerce électronique pour faciliter les transactions en ligne.",
+        "category":"popular",
+        "projectDetails": {
+          "name": "E-Shop Identity",
+          "date": "March 5, 2018",
+          "client": "E-Shop",
+          "image": "/src/public/assets/project_2.jpg",
+          "brief": "Le Lorem Ipsum est utilisé pour démontrer le modèle de la plateforme de commerce électronique, simplifiant la navigation pour les utilisateurs."
+        }
+      },
+      {
+        "id":3,
+        "title": "Marketing Landing",
+        "description": "création de page d'atterrissage pour augmenter l'engagement et les conversions.",
+        "category":"popular",
+        "projectDetails": {
+          "name": "Brand Launch",
+          "date": "July 21, 2019",
+          "client": "LaunchCorp",
+          "image": "/src/public/assets/project_3.jpg",
+          "brief": "Cette page d'atterrissage est conçue pour maximiser l'impact marketing et attirer plus d'utilisateurs potentiels."
+        }
+      },
+      {
+        "id":4,
+        "title": "Blog Website Design",
+        "description": "création d'un site de blog moderne avec une interface utilisateur intuitive.",
+        "category":"recent",
+        "projectDetails": {
+          "name": "My Blog",
+          "date": "October 12, 2020",
+          "client": "Blogging Co.",
+          "image": "/src/public/assets/project_4.jpg",
+          "brief": "Ce site de blog permet aux utilisateurs de lire et de partager du contenu de manière fluide et engageante."
+        }
+      },
+      {
+        "id":5,
+        "title": "Portfolio Update",
+        "description": "mise à jour de portefeuille pour une présence en ligne raffinée et moderne.",
+        "category":"recent",
+        "projectDetails": {
+          "name": "Modern Portfolio",
+          "date": "April 15, 2021",
+          "client": "Freelance",
+          "image": "/src/public/assets/project_5.jpg",
+          "brief": "Un portfolio moderne conçu pour montrer des projets récents et mettre en valeur les compétences."
+        }
+      },
+      {
+        "id":6,
+        "title": "Corporate Website",
+        "description": "refonte du site web pour une meilleure image de marque et navigation.",
+        "category":"recent",
+        "projectDetails": {
+          "name": "Corporate Web",
+          "date": "June 9, 2022",
+          "client": "CorpTech",
+          "image": "/src/public/assets/project_6.jpg",
+          "brief": "Refonte complète du site web pour s'aligner avec la nouvelle identité de marque et améliorer l'expérience utilisateur."
+        }
+      }
+    ]
+  }
+  
