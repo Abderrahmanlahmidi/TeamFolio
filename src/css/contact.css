@@ -1,0 +1,261 @@
+body{
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+#slide{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+height: 424px;
+background-image:url(/src/public/assets/4d968efd2fc513a5bca11a959bb00c7fcc1af2db\ 3.png)
+
+}
+
+
+ #slide .texts  h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+text-align: center;
+ }
+
+ #slide .texts p{
+   
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 45px;
+text-align: center;
+color: #000000;
+
+
+
+}
+
+ */ */
+
+
+input{
+    width: 294px;
+height: 40px;
+}
+
+#main{
+    background: #F4F5EF;
+    
+font-family: 'Poppins';
+font-style: normal;
+
+}
+
+#inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#lolo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+}
+.send-message{
+    transform: translateX(10px);
+
+}
+
+#main .send-message h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    paddin
+}
+
+#map h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.first input{
+    width: 288px;
+height: 40px;
+}
+
+#button-send button{
+    position:relative;
+    left:270px;
+    top:-200px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 140%;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.second{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.send-message{
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.send-message{
+    width: 20px;
+}
+
+input{
+    padding: 10px;
+}
+
+#Témoignages .text h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-align: center;
+}
+
+#divat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Poppins';
+font-style: normal;
+}
+
+#divat .first-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(180deg, #90DBF4 14.88%, #FDE4CF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+text-align: center;
+
+}
+
+#divat .second-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(180deg, #90DBF4 14.88%, #FDE4CF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+text-align: center;
+
+}
+
+#divat .tird-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(180deg, #90DBF4 14.88%, #FDE4CF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+text-align: center;
+
+}
+
+#Témoignages{
+    background-color: #F4F5EF;
+}
+
+#divat .parag{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+}
+
+#divat .title-name{
+    
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+}
+
+#divat .date{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+}
+
+#horaire .text h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-align: center;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.pictures{
+    display: flex;
+    justify-content: space-around;
+}
+
+#horaire  .first .full-name {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+}
+
+#horaire{
+    background: #F4F5EF;
+
+}
+
+#social{
+    background: #F4F5EF;
+    padding-top: 40px;
+}
+
+#pictures{
+    border:1px solid red
+}
