@@ -54,9 +54,9 @@
           <button class="filter_button  py-[10px] px-[40px] transition delay-75 rounded border-2 border-black hover:text-white hover:bg-black"></button>
         </div>
 
-        <div class="grid grid-cols-3  gap-[40px] mt-4" >
+        <div class="grid mb-[60px] grid-cols-3 max-lg:grid-cols-2 max-lg:grid-rows-2 max-md:grid-cols-1   gap-[40px] mt-4" >
           <!-- cards -->
-          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px]" >
+          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px] shadow" >
             <img class="someImage  w-[340px] h-[193px] rounded-[10px]" src="" alt="image card">
             <div class="flex flex-col justify-start gap-[4px]" >
               <h5 class="card_head text-[24px] font-bold" ></h5>
@@ -64,7 +64,7 @@
               <button class="w-[140px] h-[40px] bg-black mt-3 text-white rounded" >view details</button>
             </div>
           </div>
-          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px]" >
+          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px] shadow" >
             <img class="someImage  w-[340px] h-[193px] rounded-[10px]" src="" alt="image card">
             <div class="flex flex-col justify-start gap-[4px]" >
               <h5 class="card_head text-[24px] font-bold" ></h5>
@@ -72,7 +72,7 @@
               <button class="w-[140px] h-[40px] bg-black mt-3 text-white rounded" >view details</button>
             </div>
           </div>
-          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px]" >
+          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px] shadow" >
             <img class="someImage  w-[340px] h-[193px] rounded-[10px]" src="" alt="image card">
             <div class="flex flex-col justify-start gap-[4px]" >
               <h5 class="card_head text-[24px] font-bold" ></h5>
@@ -80,7 +80,7 @@
               <button class="w-[140px] h-[40px] bg-black mt-3 text-white rounded" >view details</button>
             </div>
           </div>
-          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px]" >
+          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px] shadow" >
             <img class="someImage  w-[340px] h-[193px] rounded-[10px]" src="" alt="image card">
             <div class="flex flex-col justify-start gap-[4px]" >
               <h5 class="card_head text-[24px] font-bold" ></h5>
@@ -88,7 +88,7 @@
               <button class="w-[140px] h-[40px] bg-black mt-3 text-white rounded" >view details</button>
             </div>
           </div>
-          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px]" >
+          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px] shadow" >
             <img class="someImage  w-[340px] h-[193px] rounded-[10px]" src="" alt="image card">
             <div class="flex flex-col justify-start gap-[4px]" >
               <h5 class="card_head text-[24px] font-bold" ></h5>
@@ -96,7 +96,7 @@
               <button class="w-[140px] h-[40px] bg-black mt-3 text-white rounded" >view details</button>
             </div>
           </div>
-          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px]" >
+          <div class="card bg-white p-[20px]  flex flex-col gap-6 rounded-[10px] shadow" >
             <img class="someImage  w-[340px] h-[193px] rounded-[10px]" src="" alt="image card">
             <div class="flex flex-col justify-start gap-[4px]" >
               <h5 class="card_head text-[24px] font-bold" ></h5>
@@ -104,13 +104,35 @@
               <button class="w-[140px] h-[40px] bg-black mt-3 text-white rounded" >view details</button>
             </div>
           </div>
-           
         </div>
 
+        <button id="display_overlay" class="bg-black px-[20px] py-[10px] rounded text-white" >add project</button>
+
+         <!-- Overlay -->
+         <div id="overlay" class="cursor-pointer fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center  z-50">
+           <div class="bg-white p-8 rounded-lg max-w-lg w-full mx-4">
+             
+           </div>
+         </div>
+        
+       
 
       </section>
+
+
+      <section class="px-[120px] py-[40px] bg-white gap-[10px]">
+        <div class="w-full flex flex-col text-center" >
+           <h2 class="text-[36px]" >Testimonials</h2>
+           <p class="text-[#8E8E8E]" >readable content of a page when looking</p>
+        </div>
+        <div class="" >
+
+        </div>
+      </section>
+
+
     </main>
-  <div class="h-[1000px]"></div>
+
 </body> 
 <script src="/src/js/projects.js" ></script>
 </html>
