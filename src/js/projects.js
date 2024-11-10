@@ -88,7 +88,11 @@ display_overlay.addEventListener("click", function(){
 
 overlay.addEventListener("click", function(){
    overlay.classList.add("hidden");
+
 })
 
-console.log("hello world")
+
+
+
+
 
