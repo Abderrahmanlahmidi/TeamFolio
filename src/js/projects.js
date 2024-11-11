@@ -77,3 +77,23 @@ function filterCards(buttonContext) {
     }
   });
 }
+
+
+const display_overlay = document.getElementById("display_overlay");
+const overlay = document.getElementById("overlay");
+
+display_overlay.addEventListener("click", function(){
+   overlay.classList.remove("hidden");
+})
+
+overlay.addEventListener("click", function(){
+   overlay.classList.add("hidden");
+
+})
+
+
+
+
+
+
+
