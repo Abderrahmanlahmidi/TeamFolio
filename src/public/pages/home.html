@@ -7,6 +7,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>HOME</title>
+    <style> 
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .image-container:hover .overlay {
+      opacity: 1;
+    }</style>
+   
 </head>
 <body>
     <header class="px-[120px] flex flex-col gap-4 max-lg:px-[16px] py-[15px] bg-white shadow sticky top-0">
@@ -45,21 +64,49 @@
 </section>
 
 <section id="main-section" class="flex flex-col  gap-10" >
-  <div class="flex flex-wrap gap-10 justify-evenly">
-    <div class="kaoutar w-80 card" ><img src="../assets/kaoutar.jpg" alt="kaoutar"></div>
-    <div class="lahmidi w-80 card"><img src="../assets/lahmidi.jpg" alt="lahmidi"></div>
+
+  <div class="relative group image-container w-64 h-64">
+    <img src="../assets/kaoutar.jpg" alt="kaoutar" class="w-full h-full object-cover rounded-lg">
+    <div class="overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+      <div id="overlay-content-1" class="text-center">
+        <p> kaoutar</p>
+        <!-- Contenu dynamique ici -->
+      </div>
+    </div>
   </div>
-  <div class="flex flex-wrap gap-10 justify-evenly">
-    <div class="wassim w-80 card"><img src="../assets/wassim oucouc.jpg" alt="oucouc wassim"></div>
-    <div class="yassir w-80 card"><img src="../assets/yassir maher.jpg" alt="yassir maher"></div>
+  <div class="relative group image-container w-64 h-64">
+    <img src="../assets/yassir maher.jpg" alt="yassir" class="w-full h-full object-cover rounded-lg">
+    <div class="overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+      <div id="overlay-content-1" class="text-center">
+       <p> yassir maher</p>
+        <!-- Contenu dynamique ici -->
+      </div>
+    </div>
   </div>
-<h3 class="text-center	">"There is no one who loves pain it self"</h3>
+  <div class="relative group image-container w-64 h-64">
+    <img src="../assets/wassim oucouc.jpg" alt="wassim" class="w-full h-full object-cover rounded-lg">
+    <div class="overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+      <div id="overlay-content-1" class="text-center">
+        <p>wassim oucouc</p>
+        <!-- Contenu dynamique ici -->
+      </div>
+    </div>
+  </div>
+  <div class="relative group image-container w-64 h-64">
+    <img src="../assets/lahmidi.jpg" alt="lahmidi" class="w-full h-full object-cover rounded-lg">
+    <div class="overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+      <div id="overlay-content-1" class="text-center">
+        <p>abderahmmane lahmidi</p>
+        <!-- Contenu dynamique ici -->
+      </div>
+    </div>
+  </div>
+
 </section>
 
 
 
 
-<script src="/src/js/home.js"></script>
-
+<script src="/src/js/home.js"></script>   
 </body>
 </html>

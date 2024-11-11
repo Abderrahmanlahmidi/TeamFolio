@@ -12,28 +12,26 @@ function changebackground()
         e.addEventListener('mouseover' , ()=>
         {
             e.innerHTML = `
-            <div class="kaoutar w-80 card   ">
+            <div class="kaoutar w-80 card" style="background-color: brown;" >
             dev web 
             full stack </div>
             `
-            e.target.style.backgroundcolor = "purple"
         })
-     
-    
-        e.addEventListener('mouseout' , ()=>
+        e.addEventListener('mouseleave' , ()=>
             {
                 e.innerHTML = `
-                <div class="kaoutar w-80 card bg-midnight" ><img src="../assets/kaoutar.jpg" alt="kaoutar"> </div>
+                <div class="flex flex-wrap gap-10 justify-evenly">
+              <div class="kaoutar w-80 card" ><img src="../assets/kaoutar.jpg" alt="kaoutar"></div>
+               <div class="lahmidi w-80 card"><img src="../assets/lahmidi.jpg" alt="lahmidi"></div>
+           </div>
+                    <div class="flex flex-wrap gap-10 justify-evenly">
+                        <div class="wassim w-80 card"><img src="../assets/wassim oucouc.jpg" alt="oucouc wassim"></div>
+                        <div class="yassir w-80 card"><img src="../assets/yassir maher.jpg" alt="yassir maher"></div>
+  </div>
                 `
             }
-    
-    
     )
     }
     )
-
-
-
-
 }
 changebackground()
