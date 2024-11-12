@@ -1,0 +1,116 @@
+[ 
+    {
+      "category": "Full-stack Development",
+      "description": "Complete end-to-end web development, including both front-end and back-end development for dynamic and responsive websites.",
+      "price": 5000,
+      "delivery_time": "6-8 weeks"
+    },
+    {
+      "category": "E-commerce Development",
+      "description": "Build secure and scalable e-commerce platforms with shopping cart integration, payment gateways, and product management features.",
+      "price": 3500,
+      "delivery_time": "4-6 weeks"
+    },
+    {
+      "category": "CMS Website Development",
+      "description": "Create content management system (CMS) websites using platforms like WordPress, Joomla, or Drupal for easy content updates and management.",
+      "price": 2000,
+      "delivery_time": "3-4 weeks"
+    },
+    {
+      "category": "Customized Web App Development",
+      "description": "Develop tailored web applications for businesses requiring specific functionality and features that standard platforms cannot offer.",
+      "price": 7000,
+      "delivery_time": "8-10 weeks"
+    },
+    {
+      "category": "Static Web Services",
+      "description": "Develop static websites that are fast, secure, and ideal for small businesses or portfolios with minimal interactive functionality.",
+      "price": 1000,
+      "delivery_time": "1-2 weeks"
+    },
+    {
+      "category": "Python Development",
+      "description": "Offer Python-based development services for web apps, automation, data analysis, and backend services.",
+      "price": 4000,
+      "delivery_time": "5-7 weeks"
+    },
+    {
+      "category": "PHP Development",
+      "description": "Build dynamic and scalable websites and applications using PHP, ideal for CMS platforms, e-commerce sites, and custom backend solutions.",
+      "price": 3000,
+      "delivery_time": "4-6 weeks"
+    },
+    {
+      "category": "Java Software Development",
+      "description": "Develop enterprise-level applications, backend systems, and mobile apps using Java technologies for high performance and scalability.",
+      "price": 6000,
+      "delivery_time": "6-8 weeks"
+    },
+    {
+      "category": "Ruby on Rails Development",
+      "description": "Create rapid, scalable, and secure web applications using Ruby on Rails, suitable for startups and businesses with tight timelines.",
+      "price": 4500,
+      "delivery_time": "5-7 weeks"
+    },
+    {
+      "category": "Website Maintenance Services",
+      "description": "Ongoing website support, updates, backups, and security patches to keep your website running smoothly.",
+      "price": 500,
+      "delivery_time": "Ongoing (monthly)"
+    },
+    {
+      "category": "Responsive Design Services",
+      "description": "Ensure your website is mobile-friendly with responsive design techniques that adapt to different screen sizes and devices.",
+      "price": 1200,
+      "delivery_time": "2-3 weeks"
+    },
+    {
+      "category": "Backend Development",
+      "description": "Build the server-side infrastructure, databases, and APIs for websites and web applications, ensuring scalability and reliability.",
+      "price": 3500,
+      "delivery_time": "4-6 weeks"
+    },
+    {
+      "category": "Frontend Development",
+      "description": "Create visually stunning and highly interactive user interfaces with modern frontend technologies like HTML, CSS, JavaScript, and frameworks like React or Angular.",
+      "price": 2500,
+      "delivery_time": "3-4 weeks"
+    },
+    {
+      "category": "Enhanced Security Services",
+      "description": "Implement advanced security measures for websites and applications, including encryption, firewalls, secure coding practices, and vulnerability testing.",
+      "price": 1500,
+      "delivery_time": "2-4 weeks"
+    },
+    {
+      "category": "Web Hosting Services",
+      "description": "Reliable and fast web hosting solutions with high uptime guarantees, including shared, VPS, and dedicated hosting options.",
+      "price": 300,
+      "delivery_time": "Ongoing (monthly)"
+    },
+    {
+      "category": "Web Design Services",
+      "description": "Design aesthetically pleasing and user-centered websites that provide a seamless user experience and align with your brand identity.",
+      "price": 2000,
+      "delivery_time": "2-3 weeks"
+    },
+    {
+      "category": "SEO Optimization Services",
+      "description": "Improve your website's ranking on search engines through on-page SEO, content optimization, and link-building strategies.",
+      "price": 1200,
+      "delivery_time": "Ongoing (3 months initial commitment)"
+    },
+    {
+      "category": "API Development",
+      "description": "Design and develop custom APIs to integrate your website or web application with third-party services or mobile apps.",
+      "price": 2500,
+      "delivery_time": "3-5 weeks"
+    },
+    {
+      "category": "Database Design Services",
+      "description": "Design and implement efficient, scalable databases for web applications, including relational and NoSQL database solutions.",
+      "price": 2000,
+      "delivery_time": "3-4 weeks"
+    }
+  ]
