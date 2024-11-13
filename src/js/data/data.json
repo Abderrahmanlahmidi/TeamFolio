@@ -83,7 +83,7 @@
     "testimonials":[
       {
         "name": "John Doe",
-        "comment": "Great service and attention to detail! Highly recommended.",
+        "comment": "Great service and attention to detail! Highly recommended",
         "image":"/src/public/assets/profile_1.png"
       },
       {
