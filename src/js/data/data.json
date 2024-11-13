@@ -78,7 +78,29 @@
           "brief": "Refonte complète du site web pour s'aligner avec la nouvelle identité de marque et améliorer l'expérience utilisateur."
         }
       }
+    ],
+    "Témoignages" :[
+      {
+        "id" :1,
+        "FULLNAME": "ADIL MAKAHADIR",
+        "DESCRIPTION":"Expérience incroyable sur DevConnect ! Le site est simple à naviguer, avec toutes les fonctionnalités dont j’ai besoin pour mon projet.",
+        "date" : "March 5, 2018"
+      },
+      {
+        "id":2,
+        "FULLNAME": "AMINE BIMAKRI",
+        "DESCRIPTION":"Très satisfait de DevConnect ! Le service est à la hauteur de mes attentes, rapide et bien structuré.",
+        "date":"April 15, 2024"
+      },
+      {
+        "id":3,
+        "FULLNAME": "ILYASS",
+        "DESCRIPTION":"Avis très positif pour DevConnect ! L’interface est conviviale et chaque option est bien pensée pour faciliter l'utilisation.",
+        "date" : "Mai 23, 2023"
+
+      }
     ]
+
 
   }
   
