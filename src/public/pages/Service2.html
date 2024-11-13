@@ -14,7 +14,34 @@
   </head>
 
   <body>
+    
+    <select name="categories" id="select-categories">
+
+      <option selected="">Please select a service category</option>
+      <option>Full-stack Development</option>
+      <option>E-commerce Development</option>
+      <option>CMS Website Development</option>
+      <option>Customized Web App Development</option>
+      <option>Static Web Services</option>
+      <option>Python Development</option>
+      <option>PHP Development</option>
+      <option>Java Software Development</option>
+      <option>Ruby on Rails Development</option>
+      <option>Website Maintenance Services</option>
+      <option>Responsive Design Services</option>
+      <option>Backend Development</option>
+      <option>Frontend Development</option>
+      <option>Enhanced Security Services</option>
+      <option>Web Hosting Services</option>
+      <option>Web Design Services</option>
+      <option>SEO Optimization Services</option>
+      <option>API Development</option>
+      <option>Database Design Services</option>
+    </select>
+
     <div id="squares_container" class="d-flex flex-wrap justify-content-center gap-3 squares_container card-body"></div>
+
+    <button type="button" link="">Create a new service</button>
 
     <script>
       fetch("../../js/data/projects.json")
