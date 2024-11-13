@@ -21,13 +21,6 @@ let passing_types_to_buttons = () => {
 
       filterCards(buttonContext);
 
-      for (let i = 0; i < button_group.length; i++) {
-        if (labelButtons[i] === targetButton) {
-          button_group[i].classList.add("bg-black", "text-white");
-        } else {
-          button_group[i].classList.remove("bg-black", "text-white");
-        }
-      }
     });
   });
 };
@@ -41,7 +34,7 @@ const card_projects = document.querySelectorAll(".card");
 let projectData = [];
 
 async function fetchProjects() {
-  const jsonFileUrl = "/src/js/data/data.json";
+  const jsonFileUrl = "/src/js/data/project.json";
 
   try {
     const response = await fetch(jsonFileUrl);
@@ -51,6 +44,8 @@ async function fetchProjects() {
     }
 
     let data = await response.json();
+
+    fetch_testimonials_data(data);
 
     projectData = data.cards;
 
@@ -79,17 +74,42 @@ function filterCards(buttonContext) {
 }
 
 
-const display_overlay = document.getElementById("display_overlay");
+
 const overlay = document.getElementById("overlay");
+const cancer_button = document.getElementById("cancer_button");
+const display_overlay = document.getElementById("display_overlay");
+
 
 display_overlay.addEventListener("click", function(){
-   overlay.classList.remove("hidden");
+  overlay.classList.remove("hidden");
 })
 
-overlay.addEventListener("click", function(){
-   overlay.classList.add("hidden");
 
+cancer_button.addEventListener("click", function(){
+   overlay.classList.add("hidden");    
 })
+
+
+
+const testimonial_paragraph = document.querySelectorAll(".t_paragraph");
+const testimonial_image = document.querySelectorAll(".t_image");
+const testimonial_name = document.querySelectorAll(".t_name");
+
+
+const fetch_testimonials_data = (testimonial_data) => {
+
+  for (let i = 0; i < testimonial_data.testimonials.length; i++) {
+    
+    testimonial_paragraph[i].innerHTML = testimonial_data.testimonials[i].comment;
+    testimonial_image[i].src = testimonial_data.testimonials[i].image;
+    testimonial_name[i].innerHTML = testimonial_data.testimonials[i].name;
+
+      
+  }
+
+    
+}
+
 
 
 

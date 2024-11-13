@@ -78,7 +78,25 @@
           "brief": "Refonte complète du site web pour s'aligner avec la nouvelle identité de marque et améliorer l'expérience utilisateur."
         }
       }
-    ]
+    ],
 
+    "testimonials":[
+      {
+        "name": "John Doe",
+        "comment": "Great service and attention to detail! Highly recommended.",
+        "image":"/src/public/assets/profile_1.png"
+      },
+      {
+        "name": "Jane Smith",
+        "comment": "The team was very professional and delivered the project on time.",
+        "image":"/src/public/assets/profile_2.png"
+      },
+      {
+        "name": "Alice Brown",
+        "comment": "Fantastic experience! The support and guidance were exceptional.",
+        "image":"/src/public/assets/profile_3.png"
+      }
+
+   ]
   }
   
