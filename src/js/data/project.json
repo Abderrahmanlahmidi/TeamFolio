@@ -79,6 +79,7 @@
         }
       }
     ],
+<<<<<<< HEAD:src/js/data/project.json
 
     "testimonials":[
       {
@@ -98,5 +99,6 @@
       }
 
    ]
+
   }
   
