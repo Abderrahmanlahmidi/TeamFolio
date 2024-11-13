@@ -9,9 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-<link href="/src/css/bocss.css" rel="stylesheet">
-
-
 <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -64,29 +61,29 @@
 
 
     <section id ="main">
+      <form id ="form">
       <div class ="send-message">
         <h2>SEND US MESSAGE</h2>
       </div>
       <section id ="lolo">
       <section id ="inputs">
         <div class ="first">
-             
           <h4>first name</h4>
-        <input type="text" class="peer ... bg-white rounded-lg shadow-2xl;
-        "/>
+        <input type="text" id ="name" class="peer ... bg-white rounded-lg shadow-2xl;"/>
     <h4>email address</h4>
-          <input type="email" class="peer ... bg-white rounded-lg"/>
-      <h4>Subject</h4>
+    <input type="email" required ="email" id="email" class="peer ... bg-white rounded-lg" />
+    <h4>Subject</h4>
       <input type="text" class="peer ... bg-white rounded-lg"/>
 </div>
 <div class ="second">
   <h4>last name</h4>
   <input type="text" class="peer ... bg-white rounded-lg h-[40px] w-[288px]"/>
 <h4>Recipient Member</h4>
-    <input type="text" class="peer ... bg-white rounded-lg h-[40px] w-[288px]"/>
+    <input type="text" id ="Recipient" class="peer ... bg-white rounded-lg h-[40px] w-[288px]"/>
 <h4>Message</h4>
-<input type="text" class="peer ... bg-white rounded-lg h-[90px] w-[288px]"/>
+<input type="text" id ="message" class="peer ... bg-white rounded-lg h-[90px] w-[288px]"/>
 </div>
+</form>
       </section>
       <section id ="map">
         <h2>LOCATION MAP</h2>
@@ -94,7 +91,7 @@
       </section>
     </section>
     <section id ="button-send">
-      <button class="rounded-full bg-black text-white	w-[125px] h-[40px]">SEND MESSAGE</button>
+      <button id="send" class="rounded-full bg-black text-white	w-[125px] h-[40px]">SEND MESSAGE</button>
 </section>
 </section>
 
@@ -103,23 +100,27 @@
     <h2>Témoignages Clients</h2>
   </div>
   <section id ="divat">
-  <div class ="first-div h-[245px] w-[400px] flex  ">
-    <h4 class="title-name">Ahmed Ali</h4>
+  <div id ="div1" class ="first-div h-[245px] w-[400px] flex  ">
+    <h4  id = "title-name"class="title-name">Ahmed Ali</h4>
     <p class ="parag">Très bonne expérience avec DevConnect. Le site est à la hauteur de mes attentes.</p>
     <h4 class ="date">2024-11-17</h4>
 
     <button id ="btn" class="rounded-full bg-black text-white	w-[125px] h-[40px] btn">répondre</button>
 
 
+    
+                      
+      </div>
+      
 
   </div>
-  <div class ="second-div h-[245px] w-[400px] flex">
-    <h4 class="title-name">Ahmed Ali</h4>
+  <div  id ="div2" class ="second-div h-[245px] w-[400px] flex">
+    <h4 id ="title-name" class="title-name">Ahmed Ali</h4>
     <p class ="parag">Très bonne expérience avec DevConnect. Le site est à la hauteur de mes attentes.</p>
     <h4 class ="date">2024-11-17</h4>
     <button class="rounded-full bg-black text-white	w-[125px] h-[40px]">répondre</button>
   </div>
-  <div class ="tird-div h-[245px] w-[400px] flex">
+  <div id ="div3" class ="tird-div h-[245px] w-[400px] flex">
     <h4 class="title-name">Ahmed Ali</h4>
     <p class ="parag">Très bonne expérience avec DevConnect. Le site est à la hauteur de mes attentes.</p>
     <h4 class ="date">2024-11-17</h4>
@@ -144,24 +145,24 @@
   <div class ="text">
     <h2>Horaires de Disponibilité des Membres</h2>
   </div>
-  <div class ="pictures">
-    <div class ="first text-center">
-      <img class ="w-[300px] h-[300px]" src="/src/public/assets/wassim.png" alt="">
+  <div  class ="pictures">
+    <div id ="ho1" class ="first text-center">
+      <img class ="w-[300px] h-[300px]" src="" alt="IMAGE">
       <p class ="full-name">WASSIM OUCOUC</p>
       <p>9AM - 12PM</p>
     </div>
-    <div class ="first text-center">
-      <img class ="w-[300px] h-[300px]"" src="/src/public/assets/yassir maher 1.png" alt="">
+    <div id ="ho2" class ="first text-center">
+      <img class ="w-[300px] h-[300px]"" src="" alt="IMAGE">
       <p class ="full-name">WASSIM OUCOUC</p>
       <p class = "text-center">9AM - 12PM</p>
     </div>
-    <div class ="first text-center">
-      <img  class ="w-[300px] h-[300px] " src="/src/public/assets/lahmidi.png" alt="">
+    <div  id ="ho3" class ="first text-center">
+      <img  class ="w-[300px] h-[300px] " src="" alt="IMAGE">
       <p class ="full-name">WASSIM OUCOUC</p>
       <p>9AM - 12PM</p>
     </div>
-    <div class ="first text-center">
-      <img  class ="w-[300px] h-[300px] " src="/src/public/assets/kaoutar.png" alt="">
+    <div  id ="ho4" class ="first text-center">
+      <img  class ="w-[300px] h-[300px] " src="" alt="IMAGE">
       <p class ="full-name">WASSIM OUCOUC</p>
       <p>9AM - 12PM</p>
     </div>
