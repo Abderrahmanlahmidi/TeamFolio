@@ -1,5 +1,9 @@
 
 const kaoutar = document.getElementById("Kaoutar");
+const abdo = document.getElementById("abdo");
+const oucouc = document.getElementById("oucouc");
+const yassir = document.getElementById("yassir");
+
 fetch('../../js/data/projects.json')
 .then(res => res.json())
 .then(Json => {
