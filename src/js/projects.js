@@ -34,7 +34,7 @@ const card_projects = document.querySelectorAll(".card");
 let projectData = [];
 
 async function fetchProjects() {
-  const jsonFileUrl = "/src/js/data/project.json";
+  const jsonFileUrl = "/src/js/data/data.json";
 
   try {
     const response = await fetch(jsonFileUrl);
