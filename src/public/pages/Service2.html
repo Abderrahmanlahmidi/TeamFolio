@@ -47,72 +47,95 @@
     </div>
   </header>
 
-  <div class="filter-container d-flex flex-row justify-content-center m-5" >
-
-    <p class="fs-3">Filter services by categories : </p>
+  <div class="filter-container d-flex flex-row justify-content-center m-5">
+    <p class="fs-3">Filter services by categories:</p>
     <select class="bg-white" name="categories" id="select-categories">
-
       <option selected="">Please select a service category</option>
-      <option>Full-stack Development</option>
-      <option>E-commerce Development</option>
-      <option>CMS Website Development</option>
-      <option>Customized Web App Development</option>
-      <option>Static Web Services</option>
-      <option>Python Development</option>
-      <option>PHP Development</option>
-      <option>Java Software Development</option>
-      <option>Ruby on Rails Development</option>
-      <option>Website Maintenance Services</option>
-      <option>Responsive Design Services</option>
-      <option>Backend Development</option>
-      <option>Frontend Development</option>
-      <option>Enhanced Security Services</option>
-      <option>Web Hosting Services</option>
-      <option>Web Design Services</option>
-      <option>SEO Optimization Services</option>
-      <option>API Development</option>
-      <option>Database Design Services</option>
+      <option value="Full-stack Development">Full-stack Development</option>
+      <option value="E-commerce Development">E-commerce Development</option>
+      <option value="CMS Website Development">CMS Website Development</option>
+      <option value="Customized Web App Development">Customized Web App Development</option>
+      <option value="Static Web Services">Static Web Services</option>
+      <option value="Python Development">Python Development</option>
+      <option value="PHP Development">PHP Development</option>
+      <option value="Java Software Development">Java Software Development</option>
+      <option value="Ruby on Rails Development">Ruby on Rails Development</option>
+      <option value="Website Maintenance Service">Website Maintenance Services</option>
+      <option value="Responsive Design Services">Responsive Design Services</option>
+      <option value="Backend Development">Backend Development</option>
+      <option value="Frontend Development">Frontend Development</option>
+      <option value="Enhanced Security Services">Enhanced Security Services</option>
+      <option value="Web Hosting Services">Web Hosting Services</option>
+      <option value="Web Design Services">Web Design Services</option>
+      <option value="SEO Optimization Services">SEO Optimization Services</option>
+      <option value="API Development">API Development</option>
+      <option value="Database Design Services">Database Design Services</option>
     </select>
-
   </div>
-
-    <div id="squares_container" class="d-flex flex-wrap justify-content-center gap-3 squares_container card-body">
-
-      <button class="creation-btn align-self-center" type="button" link="">Create a new service</button>
-
+  
+  <div id="squares_container" class="d-flex flex-wrap justify-content-center gap-3 squares_container card-body">
+    <button class="creation-btn align-self-center" type="button">Create a new service</button>
+  </div>
+  
+  <footer class="flex w-full my-[20px] justify-center">
+    <div class="flex justify-center items-center gap-[20px]">
+      <img class="w-[40px] cursor-pointer" src="../assets/linkedin-round-svgrepo-com.svg">
+      <img class="w-[40px] cursor-pointer" src="../assets/dribbble-round-svgrepo-com.svg">
+      <img class="w-[40px] cursor-pointer" src="../assets/instagram-round-svgrepo-com.svg">
+      <img class="w-[40px] cursor-pointer" src="../assets/facebook-round-svgrepo-com.svg">
     </div>
+  </footer>
+  
+  <script>
+fetch("../../js/data/projects.json")
+  .then((res) => res.json())
+  .then((data) => {
+    fillServiceBoxes(data);
+  });
 
-    
+function fillServiceBoxes(services) {
+  let containerServices = document.getElementById("squares_container");
 
-    <script>
-      fetch("../../js/data/projects.json")
-        .then((res) => res.json())
-        .then((data) => {
-          fillServiceBoxes(data);
-        });
+  services.forEach((element) => {
+    let square = document.createElement("div");
 
-      function fillServiceBoxes(services) {
-        let containerServices = document.getElementById("squares_container");
+    square.setAttribute("class", "s-squares card p-3 bg-white");
 
-        services.forEach((element) => {
-          let square = document.createElement("div");
+    square.innerHTML = `
+      <h5 class="s-categories card-title fs-3">${element.category}</h5>
+      <hr>
+      <p class="card-text">${element.description}</p>
+      <hr>
+      <p class="card-text">Price: ${element.price}</p>
+      <p class="card-text">Delivery time: ${element.delivery_time}</p>
+    `;
 
-          square.setAttribute("class", "s-squares card p-3 bg-white");
+    containerServices.appendChild(square);
+  });
+}
 
-          square.innerHTML = `
-    <h5 class="card-title fs-3">${element.category}</h5>
-    <hr >
-    <p class="card-text">${element.description}</p>
-    <hr >
-    <p class="card-text">Price : ${element.price}</p>
-    <p class="card-text"> Delivery time :${element.delivery_time}</p>
-       `;
-          containerServices.appendChild(square);
-        });
-      }
+const selected_category = document.getElementById("select-categories");
 
+selected_category.addEventListener("change", function () {
+  const selectedOption = selected_category.value;
+  const serviceCards = document.querySelectorAll(".s-squares");
 
-      
-    </script>
+  // If "Please select" is chosen, show all service cards
+  if (selectedOption === "") {
+    serviceCards.forEach(card => card.style.display = 'block');
+    return;
+  }
+
+  serviceCards.forEach(card => {
+    const category = card.querySelector(".s-categories"); // Find the category element within the card
+
+    if (category && category.textContent.trim() === selectedOption) {
+      card.style.display = 'block'; // Show the matching card
+    } else {
+      card.style.display = 'none'; // Hide the non-matching cards
+    }
+  });
+});
+  </script>
   </body>
 </html>
