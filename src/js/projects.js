@@ -33,6 +33,8 @@ const someImage = document.querySelectorAll(".someImage");
 const card_projects = document.querySelectorAll(".card");
 let projectData = [];
 
+console.log(card_head);
+
 async function fetchProjects() {
   const jsonFileUrl = "/src/js/data/data.json";
 
@@ -104,14 +106,29 @@ const fetch_testimonials_data = (testimonial_data) => {
     testimonial_image[i].src = testimonial_data.testimonials[i].image;
     testimonial_name[i].innerHTML = testimonial_data.testimonials[i].name;
 
-      
   }
 
-    
 }
 
 
 
+const create_form = document.getElementById("create_form");
+
+
+create_form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  const title = document.getElementById("title");
+  const category = document.getElementById("category");
+  const message = document.getElementById("message");
+
+  console.log(title.value)
+  console.log(category.value)
+  console.log(message.value)
+
+
+
+})
 
 
 
