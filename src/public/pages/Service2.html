@@ -120,19 +120,18 @@ selected_category.addEventListener("change", function () {
   const selectedOption = selected_category.value;
   const serviceCards = document.querySelectorAll(".s-squares");
 
-  // If "Please select" is chosen, show all service cards
   if (selectedOption === "") {
     serviceCards.forEach(card => card.style.display = 'block');
     return;
   }
 
   serviceCards.forEach(card => {
-    const category = card.querySelector(".s-categories"); // Find the category element within the card
+    const category = card.querySelector(".s-categories");
 
     if (category && category.textContent.trim() === selectedOption) {
-      card.style.display = 'block'; // Show the matching card
+      card.style.display = 'block';
     } else {
-      card.style.display = 'none'; // Hide the non-matching cards
+      card.style.display = 'none';
     }
   });
 });
