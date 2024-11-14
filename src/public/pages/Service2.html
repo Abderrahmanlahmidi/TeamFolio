@@ -11,6 +11,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+<<<<<<< HEAD
   </head>
 
   <body>
@@ -69,5 +70,132 @@
       }
       
     </script>
+=======
+    <link href="/src/css/output.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-secondary-subtle">
+    
+       <!-- navbar -->
+  <header class="px-[120px]  flex flex-col gap-4 max-lg:px-[16px] py-[15px] bg-white shadow sticky top-0">
+    <nav class="flex justify-between items-center" >
+      <h4 class="font-bold text-[24px] max-lg:text-[20px] cursor-pointer">TeamFolio</h4>
+      <ul class="flex gap-10 items-center max-lg:hidden" >
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="project.html">Équipe</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="">Projects</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="">Services</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="">Contact</a></li>
+      </ul>
+      <div class="hamburgerMenu p-[5px] cursor-pointer hidden max-lg:block bg-[#f3f4f6] rounded" >
+        <img class="w-[30px] hidden max-lg:block" src="../assets/menu.svg" alt="icon button menu">
+      </div>
+    </nav>
+    <div class="navLinks hidden p-5 rounded  bg-[#f3f4f6]   flex-col gap-3" >
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Équipe</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Projects</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Services</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="">Contact</a></li>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="filter-container d-flex flex-row justify-content-center m-5">
+    <p class="fs-3">Filter services by categories:</p>
+    <select class="bg-white" name="categories" id="select-categories">
+      <option selected="">Please select a service category</option>
+      <option value="Full-stack Development">Full-stack Development</option>
+      <option value="E-commerce Development">E-commerce Development</option>
+      <option value="CMS Website Development">CMS Website Development</option>
+      <option value="Customized Web App Development">Customized Web App Development</option>
+      <option value="Static Web Services">Static Web Services</option>
+      <option value="Python Development">Python Development</option>
+      <option value="PHP Development">PHP Development</option>
+      <option value="Java Software Development">Java Software Development</option>
+      <option value="Ruby on Rails Development">Ruby on Rails Development</option>
+      <option value="Website Maintenance Service">Website Maintenance Services</option>
+      <option value="Responsive Design Services">Responsive Design Services</option>
+      <option value="Backend Development">Backend Development</option>
+      <option value="Frontend Development">Frontend Development</option>
+      <option value="Enhanced Security Services">Enhanced Security Services</option>
+      <option value="Web Hosting Services">Web Hosting Services</option>
+      <option value="Web Design Services">Web Design Services</option>
+      <option value="SEO Optimization Services">SEO Optimization Services</option>
+      <option value="API Development">API Development</option>
+      <option value="Database Design Services">Database Design Services</option>
+    </select>
+  </div>
+  
+  <div id="squares_container" class="d-flex flex-wrap justify-content-center gap-3 squares_container card-body">
+    <button class="creation-btn align-self-center" type="button">Create a new service</button>
+  </div>
+  
+  <footer class="flex w-full my-[20px] justify-center">
+    <div class="flex justify-center items-center gap-[20px]">
+      <img class="w-[40px] cursor-pointer" src="../assets/linkedin-round-svgrepo-com.svg">
+      <img class="w-[40px] cursor-pointer" src="../assets/dribbble-round-svgrepo-com.svg">
+      <img class="w-[40px] cursor-pointer" src="../assets/instagram-round-svgrepo-com.svg">
+      <img class="w-[40px] cursor-pointer" src="../assets/facebook-round-svgrepo-com.svg">
+    </div>
+  </footer>
+  
+  <script>
+fetch("../../js/data/projects.json")
+  .then((res) => res.json())
+  .then((data) => {
+    fillServiceBoxes(data);
+  });
+
+function fillServiceBoxes(services) {
+  let containerServices = document.getElementById("squares_container");
+
+  services.forEach((element) => {
+    let square = document.createElement("div");
+
+    square.setAttribute("class", "s-squares card p-3 bg-white");
+
+    square.innerHTML = `
+      <h5 class="s-categories card-title fs-3">${element.category}</h5>
+      <hr>
+      <p class="card-text">${element.description}</p>
+      <hr>
+      <p class="card-text">Price: ${element.price}</p>
+      <p class="card-text">Delivery time: ${element.delivery_time}</p>
+    `;
+
+    containerServices.appendChild(square);
+  });
+}
+
+const selected_category = document.getElementById("select-categories");
+
+selected_category.addEventListener("change", function () {
+  const selectedOption = selected_category.value;
+  const serviceCards = document.querySelectorAll(".s-squares");
+
+  if (selectedOption === "") {
+    serviceCards.forEach(card => card.style.display = 'block');
+    return;
+  }
+
+  serviceCards.forEach(card => {
+    const category = card.querySelector(".s-categories");
+
+    if (category && category.textContent.trim() === selectedOption) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+});
+  </script>
+>>>>>>> e4fa041bfd42f5c5ef4a309e3d96862a3ad77cea
   </body>
 </html>

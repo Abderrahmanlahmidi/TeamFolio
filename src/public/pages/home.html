@@ -9,28 +9,11 @@
 
 
     <title>HOME</title>
-   <style> 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-    }
-    .image-container:hover .overlay {
-      opacity: 1;
-    }</style> 
+  
    
 </head>
 <body>
-    <header class="px-[120px] flex flex-col gap-4 max-lg:px-[16px] py-[15px] bg-white shadow sticky top-0">
+    <header class="px-[120px] flex flex-col gap-4 max-lg:px-[16px] py-[15px] bg-white shadow sticky top-0 z-50">
         <nav class="flex justify-between items-center" >
           <h4 class="font-bold text-[24px] max-lg:text-[20px] cursor-pointer">TeamFolio</h4>
           <ul class="flex gap-10 items-center max-lg:hidden" >
@@ -64,14 +47,20 @@
 <p class="text-center" >Expedita rem ducimus qui aliquid dolorum eligendi, distinctio quasi aut doloribus amet soluta animi sapiente, hic mollitia. Voluptate quidem magni expedita perferendis.</p>
 </section>
 
-<section id="main-section" class="grid grid-cols-2 gap-6 p-4   gap-10 justify-evenly " >
-
- 
+<section id="main-section" class="grid grid-cols-2 gap-4  p-5 justify-items-center" >
 
 </section>
+<div><h3 class="text-center">"There is no one who loves pain it self"</h3></div>
 
 
-
+<footer class="flex w-full my-[20px] justify-center">
+  <div class="flex justify-center items-center gap-[20px]" >
+    <img class="w-[40px] cursor-pointer"  src="../assets/linkedin-round-svgrepo-com.svg">
+    <img class="w-[40px] cursor-pointer"  src="../assets/dribbble-round-svgrepo-com.svg">
+    <img class="w-[40px] cursor-pointer"  src="../assets/instagram-round-svgrepo-com.svg">
+    <img class="w-[40px] cursor-pointer"  src="../assets/facebook-round-svgrepo-com.svg">
+  </div>
+</footer>
 
 <script src="/src/js/home.js"></script>   
 </body>
