@@ -1,11 +1,10 @@
 
-
+var i=1;
 async function load   ()  {
 
-     const Response  =  await fetch("http://127.0.0.1:5500/src/js/data/team.json")
-     let data =  await Response.json()
+     const Response  =  await fetch("/src/js/data/team.json")
+     let data =  await Response.json();
      Afficherequipe(data)
-     console.log(data)
 
          
 
@@ -13,15 +12,15 @@ async function load   ()  {
 load( )
 
 
-function Afficherequipe(images) {
-   
+function Afficherequipe(data) {
+ 
     let html=""
-    images.forEach((imageContainer) => {
+    data.images.forEach((imageContainer) => {
 
-      html+=` <div class="relative group image-container w-80 h-80  ">
-          <img src="${imageContainer.image}" alt="kaoutar" class="w-full h-full object-cover rounded-lg">
+      html+=` <div class="relative group image-container w-80 h-80  test" id="t${i}" >
+          <img  src="${imageContainer.image}" alt="kaoutar" class="w-full h-full object-cover rounded-lg">
     <div class="overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-      <div id="overlay-content-1" class="text-center">
+      <div onclick="test(${imageContainer.name})" id="overlay-content-1" class="text-center">
          <h3 class="text-2xl font-bold">${imageContainer.name}</h3>
          <p class="text-lg">${imageContainer.age} ans</p>
          <p class="mt-2">${imageContainer.description}</p>
@@ -31,9 +30,21 @@ function Afficherequipe(images) {
 `
 ;
 
+
+i++
+
+
 });
+
 document.getElementById("main-section").innerHTML =html
 
+}
+
+
+function test(j){
+  console.log(`${j}` );
+  
+  //  location.href(`/src/public/pages/portfolio.html?id ${id}`)
 }
 
 

@@ -1,0 +1,50 @@
+{
+"Témoignages" :[
+      {
+        "id" :1,
+        "FULLNAME": "ADIL MAKAHADIR",
+        "DESCRIPTION":"Expérience incroyable sur DevConnect ! Le site est simple à naviguer.",
+        "date" : "March 5, 2018"
+      },
+      {
+        "id":2,
+        "FULLNAME": "AMINE BIMAKRI",
+        "DESCRIPTION":"Très satisfait de DevConnect ! Le service est à la hauteur de mes attentes",
+        "date":"April 15, 2024"
+      },
+      {
+        "id":3,
+        "FULLNAME": "ILYASS",
+        "DESCRIPTION":"Avis très positif pour DevConnect ! L’interface est conviviale",
+        "date" : "Mai 23, 2023"
+
+      }
+    ],
+    "horaire" : [
+      {
+        "id" :1,
+        "image" : "/src/public/assets/wassim.png",
+        "name" : "WASSIM OUCOUC",
+        "horaire": "9AM - 12PM"
+      },
+      {
+        
+        "id" :2,
+        "image" : "/src/public/assets/yassir maher 1.png",
+        "name" : "YASSIR MAHIR",
+        "horaire": "6AM - 17PM"
+      },
+      {
+        "id" :3,
+        "image" : "/src/public/assets/lahmidi.png",
+        "name" : "ABDERRAHMAN LAHMIDI",
+        "horaire": "9AM - 15PM"
+      },
+      {
+        "id" :4,
+        "image" : "/src/public/assets/kaoutar.png",
+        "name" : "KAOUTAR LABJIOUI",
+        "horaire": "10AM - 18PM"
+      }
+    ]
+}
