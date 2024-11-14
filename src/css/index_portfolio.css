@@ -1,3 +1,51 @@
 .card{
     width: 15rem;
+<<<<<<< HEAD
 }
+=======
+}
+
+#offers-title{
+    text-align: center;
+    margin: 20px;
+}
+
+.creation-btn{
+    border: 2px solid black;
+    width: 203px;
+    height: 203px;
+    border-radius: 6px
+}
+
+
+.s-squares{
+    width: 305px;
+}
+
+.discover-buton{
+    background-color: black;
+    color: white;
+}
+
+/* .members-squares{
+    display: flex;
+    flex-direction: column;
+} */
+
+img, video {
+    max-width: 45%;
+    height: auto;
+}
+
+.members-squares{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ul-squares{
+    height: 300px;
+    width: 300px;
+}
+
+>>>>>>> e4fa041bfd42f5c5ef4a309e3d96862a3ad77cea
