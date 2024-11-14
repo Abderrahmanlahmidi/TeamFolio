@@ -1,0 +1,38 @@
+{ "images":[
+  {
+    "name": "LABJIOUI Kaoutar",
+    "age": 26,
+    "description": "Développeuse Frontend passionnée par le design web.",
+    "image": "/src/public/assets/kaoutar.jpg",
+    "email":"kalabjioui@gmail.com",
+    "linkedin":"LABJIOUI Kaoutar",
+    "telephone":"0643186912"
+
+
+  },
+  {
+    "name": "LAHMIDI Abdarahm24anne",
+    "age": 24,
+    "description": "Développeur Backend avec une expérience dans le cloud computing.",
+    "image": "./../assets/lahmidi.jpg",
+    "email":"kalabjioui@gmail.com",
+    "linkedin":"LABJIOUI Kaoutar",
+    "telephone":"0643186912"
+  },
+  {
+    "name": "OUCOUC Wassim",
+    "age": 21,
+    "description": "Designer UI/UX, toujours à la recherche de nouvelles idées créatives.",
+    "image": "/src/public/assets/wassim oucouc.jpg",
+    "email":"kalabjioui@gmail.com",
+    "linkedin":"LABJIOUI Kaoutar",
+    "telephone":"0643186912"
+  },
+  {
+    "name": "MAHER Yassir",
+    "age": 25,
+    "description": "Chef de projet, expert en gestion d'équipe et en méthodologies agiles.",
+    "image": "/src/public/assets/yassir maher.jpg"
+  }
+]
+}
