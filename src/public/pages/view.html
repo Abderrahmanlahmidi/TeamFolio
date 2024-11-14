@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/output.css">
+    <title>view</title>
+</head>
+<body>
+  <!-- navbar -->
+  <header class="px-[120px] z-50 flex flex-col gap-4 max-lg:px-[16px] py-[15px] bg-white shadow sticky top-0">
+    <nav class="flex justify-between items-center" >
+      <h4 class="font-bold text-[24px] max-lg:text-[20px] cursor-pointer">TeamFolio</h4>
+      <ul class="flex gap-10 items-center max-lg:hidden" >
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="home.html">Équipe</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="project.html">Projects</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="Service1.html">Services</a></li>
+        <li><a class="hover:text-[#8E8E8E] transition delay-75" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburgerMenu p-[5px] cursor-pointer hidden max-lg:block bg-[#f3f4f6] rounded" >
+        <img class="w-[30px] hidden max-lg:block" src="../assets/menu.svg" alt="icon button menu">
+      </div>
+    </nav>
+    <div class="navLinks hidden p-5 rounded  bg-[#f3f4f6]   flex-col gap-3" >
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="home.html">Équipe</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="project.html">Projects</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="Service1.html">Services</a></li>
+      </div>
+      <div class="py-2 px-4 hover:bg-white rounded" >
+        <li class="list-none"><a class="decoration-none" href="contact.html">Contact</a></li>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="bg-[#F4F5EF] py-[50px] px-[120px] max-lg:px-[16px] flex flex-col gap-[20px]">
+    <h1 class="text-[40px] font-bold max-lg:text-[32px]">Project</h1>
+    <div class="w-full flex max-lg:flex-col max-lg:gap-4  justify-between py-5 border-y-[1px] border-[#B3B3B3]" >
+        <div>
+            <h3 class="text-[24px] font-semibold max-lg:text-[20px]" >Name</h3>
+            <p class="font-semibold information" ></p>
+        </div>
+        <div>
+            <h3 class="text-[24px] font-semibold max-lg:text-[20px]" >Date</h3>
+            <p class="font-semibold information" ></p>
+        </div>
+        <div>
+            <h3 class="text-[24px] font-semibold max-lg:text-[20px]" >Client</h3>
+            <p class="font-semibold information" ></p>
+        </div>
+      </div>
+      <div class="w-full flex flex-col justify-center max-lg:px-[0px] px-[90px] gap-[16px] py-[20px]" >
+          <img src="../assets/project_1.jpg">
+          <h3 class="text-[32px] font-bold" >Brief</h3>
+          <p class="text-[#757575]" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim iure quasi natus praesentium quia tempora, autem suscipit. Earum enim, autem eaque culpa repellat in corporis vero deserunt est, qui consectetur voluptatum mollitia id accusamus molestias! Fuga assumenda inventore qui optio mollitia quidem, cum ex voluptatem eos sequi non excepturi perspiciatis dignissimos itaque repellat, error cumque libero reiciendis ea? Velit harum nisi amet nesciunt, fugiat numquam laborum? Maxime, quasi nemo nulla facere possimus perferendis a ullam doloremque provident! Adipisci laborum voluptates enim ratione possimus numquam inventore impedit porro aliquid explicabo nam earum nesciunt, odit maxime quasi repellat maiores doloribus asperiores suscipit.</p>
+      </div>
+
+
+
+
+  </main>
+</body>
+<script src="/src/js/projects.js" ></script>
+<script src="/src/js/view.js" ></script>
+</html>
