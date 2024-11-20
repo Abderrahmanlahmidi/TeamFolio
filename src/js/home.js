@@ -17,7 +17,7 @@ function Afficherequipe(data) {
     let html=""
     data.images.forEach((imageContainer) => {
 
-      html+=` <div class="relative group image-container w-80 h-80  test" id="t${i}" >
+      html+=` <div class="relative group image-container w-80 h-80  test"  >
           <img  src="${imageContainer.image}" alt="kaoutar" class="w-full h-full object-cover rounded-lg">
     <div class="overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
       <div onclick="test(${imageContainer.name})" id="overlay-content-1" class="text-center">
@@ -31,7 +31,7 @@ function Afficherequipe(data) {
 ;
 
 
-i++
+// i++
 
 
 });
@@ -41,11 +41,11 @@ document.getElementById("main-section").innerHTML =html
 }
 
 
-function test(j){
-  console.log(`${j}` );
+// function test(j){
+//   console.log(`${j}` );
   
-  //  location.href(`/src/public/pages/portfolio.html?id ${id}`)
-}
+//   //  location.href(`/src/public/pages/portfolio.html?id ${id}`)
+// }
 
 
 
