@@ -11,66 +11,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-<<<<<<< HEAD
-  </head>
-
-  <body>
-    
-    <select name="categories" id="select-categories">
-
-      <option selected="">Please select a service category</option>
-      <option>Full-stack Development</option>
-      <option>E-commerce Development</option>
-      <option>CMS Website Development</option>
-      <option>Customized Web App Development</option>
-      <option>Static Web Services</option>
-      <option>Python Development</option>
-      <option>PHP Development</option>
-      <option>Java Software Development</option>
-      <option>Ruby on Rails Development</option>
-      <option>Website Maintenance Services</option>
-      <option>Responsive Design Services</option>
-      <option>Backend Development</option>
-      <option>Frontend Development</option>
-      <option>Enhanced Security Services</option>
-      <option>Web Hosting Services</option>
-      <option>Web Design Services</option>
-      <option>SEO Optimization Services</option>
-      <option>API Development</option>
-      <option>Database Design Services</option>
-    </select>
-
-    <div id="squares_container" class="d-flex flex-wrap justify-content-center gap-3 squares_container card-body"></div>
-
-    <button type="button" link="">Create a new service</button>
-
-    <script>
-      fetch("../../js/data/projects.json")
-        .then((res) => res.json())
-        .then((data) => {
-          fillServiceBoxes(data);
-        });
-
-      function fillServiceBoxes(services) {
-        let containerServices = document.getElementById("squares_container");
-
-        services.forEach((element) => {
-          let square = document.createElement("div");
-
-          square.setAttribute("class", "card p-3");
-
-          square.innerHTML = `
-    <h5 class="card-title">${element.category}</h5>
-    <p class="card-text">${element.description}</p>
-    <p class="card-text">${element.price}</p>
-    <p class="card-text">${element.delivery_time}</p>
-       `;
-          containerServices.appendChild(square);
-        });
-      }
-      
-    </script>
-=======
     <link href="/src/css/output.css" rel="stylesheet">
   </head>
 
@@ -111,6 +51,7 @@
     <p class="fs-3">Filter services by categories:</p>
     <select class="bg-white" name="categories" id="select-categories">
       <option selected="">Please select a service category</option>
+      <option value="ALL">ALL</option>
       <option value="Full-stack Development">Full-stack Development</option>
       <option value="E-commerce Development">E-commerce Development</option>
       <option value="CMS Website Development">CMS Website Development</option>
@@ -154,10 +95,10 @@ fetch("../../js/data/projects.json")
   });
 
 function fillServiceBoxes(services) {
-  let containerServices = document.getElementById("squares_container");
+  let containerServices = document.getElementById("squares_container")
 
   services.forEach((element) => {
-    let square = document.createElement("div");
+    let square = document.createElement("div")
 
     square.setAttribute("class", "s-squares card p-3 bg-white");
 
@@ -185,17 +126,23 @@ selected_category.addEventListener("change", function () {
     return;
   }
 
-  serviceCards.forEach(card => {
+  serviceCards.forEach((card) => {
     const category = card.querySelector(".s-categories");
 
     if (category && category.textContent.trim() === selectedOption) {
       card.style.display = 'block';
+    } else if (selectedOption === "ALL") {
+      serviceCards.forEach(card => card.style.display = "block");
     } else {
       card.style.display = 'none';
     }
   });
 });
+
+
+
+
+
   </script>
->>>>>>> e4fa041bfd42f5c5ef4a309e3d96862a3ad77cea
   </body>
 </html>
