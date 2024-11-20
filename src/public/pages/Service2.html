@@ -51,6 +51,7 @@
     <p class="fs-3">Filter services by categories:</p>
     <select class="bg-white" name="categories" id="select-categories">
       <option selected="">Please select a service category</option>
+      <option value="ALL">ALL</option>
       <option value="Full-stack Development">Full-stack Development</option>
       <option value="E-commerce Development">E-commerce Development</option>
       <option value="CMS Website Development">CMS Website Development</option>
@@ -94,10 +95,10 @@ fetch("../../js/data/projects.json")
   });
 
 function fillServiceBoxes(services) {
-  let containerServices = document.getElementById("squares_container");
+  let containerServices = document.getElementById("squares_container")
 
   services.forEach((element) => {
-    let square = document.createElement("div");
+    let square = document.createElement("div")
 
     square.setAttribute("class", "s-squares card p-3 bg-white");
 
@@ -125,16 +126,23 @@ selected_category.addEventListener("change", function () {
     return;
   }
 
-  serviceCards.forEach(card => {
+  serviceCards.forEach((card) => {
     const category = card.querySelector(".s-categories");
 
     if (category && category.textContent.trim() === selectedOption) {
       card.style.display = 'block';
+    } else if (selectedOption === "ALL") {
+      serviceCards.forEach(card => card.style.display = "block");
     } else {
       card.style.display = 'none';
     }
   });
 });
+
+
+
+
+
   </script>
   </body>
 </html>
