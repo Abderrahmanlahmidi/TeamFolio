@@ -556,6 +556,40 @@ video {
   display: none;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .fixed{
   position: fixed;
 }
@@ -598,19 +632,14 @@ video {
   margin-right: auto;
 }
 
-.my-\[40px\]{
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.my-\[20x\]{
-  margin-top: 20x;
-  margin-bottom: 20x;
-}
-
 .my-\[20px\]{
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.my-\[40px\]{
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .mb-2{
@@ -725,24 +754,16 @@ video {
   width: 400px;
 }
 
+.w-\[40px\]{
+  width: 40px;
+}
+
 .w-full{
   width: 100%;
 }
 
 .w-\[\]{
   width: ;
-}
-
-.w-\[20px\]{
-  width: 20px;
-}
-
-.w-\[40px\]{
-  width: 40px;
-}
-
-.w-\[50px\]{
-  width: 50px;
 }
 
 .max-w-\[327px\]{
@@ -845,8 +866,20 @@ video {
   gap: 4px;
 }
 
+.gap-5{
+  gap: 1.25rem;
+}
+
 .gap-\[\]{
   gap: ;
+}
+
+.gap-\[16x\]{
+  gap: 16x;
+}
+
+.gap-\[16px\]{
+  gap: 16px;
 }
 
 .rounded{
@@ -869,9 +902,42 @@ video {
   border-width: 1px;
 }
 
+.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.border-y-2{
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
+.border-y-\[1px\]{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .border-gray-300{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-\[\]{
+  border-color: ;
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-\[\#\]{
+  border-color: #;
+}
+
+.border-\[\#B3B3B3\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(179 179 179 / var(--tw-border-opacity));
 }
 
 .bg-\[\#F4F5EF\]{
@@ -910,6 +976,10 @@ video {
 
 .p-2\.5{
   padding: 0.625rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .p-4{
@@ -976,17 +1046,73 @@ video {
   padding-bottom: 40px;
 }
 
+.py-\[50px\]{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .py-\[60px\]{
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[30px\]{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.px-\[90px\]{
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.px-\[20px\]{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-\[20px\]{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pb-\[40px\]{
   padding-bottom: 40px;
 }
 
+.pt-\[\]{
+  padding-top: ;
+}
+
+.pt-\[1\]{
+  padding-top: 1;
+}
+
+.pt-\[20px\]{
+  padding-top: 20px;
+}
+
 .text-center{
   text-align: center;
+}
+
+.font-\[\]{
+  font-family: ;
 }
 
 .text-2xl{
@@ -1021,12 +1147,20 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[32px\]{
+  font-size: 32px;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .text-\[\#6b7280\]{
@@ -1052,6 +1186,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\]{
+  color: ;
 }
 
 .opacity-0{
@@ -1170,6 +1308,14 @@ body{
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
+  .max-lg\:flex-col{
+    flex-direction: column;
+  }
+
+  .max-lg\:gap-4{
+    gap: 1rem;
+  }
+
   .max-lg\:px-\[16px\]{
     padding-left: 16px;
     padding-right: 16px;
@@ -1178,6 +1324,31 @@ body{
   .max-lg\:py-\[60px\]{
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .max-lg\:py-\[\]{
+    padding-top: ;
+    padding-bottom: ;
+  }
+
+  .max-lg\:py-\[16\]{
+    padding-top: 16;
+    padding-bottom: 16;
+  }
+
+  .max-lg\:py-\[16px\]{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .max-lg\:px-\[\]{
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .max-lg\:px-\[0px\]{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .max-lg\:text-\[20px\]{
